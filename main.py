@@ -48,6 +48,6 @@ def create_app():
     app.register_blueprint(user_bp)
     app.register_blueprint(products_bp)
     app.register_blueprint(address_bp)
-    # app.register_blueprint(orders_bp)
+
 
     return app

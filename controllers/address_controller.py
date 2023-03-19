@@ -39,7 +39,7 @@ def get_an_address(id):
     return AddressSchema(many=True).dump(addresses)
 
 
-# for users to updating their address
+# For users that need to update their address
 @address_bp.route('/<int:id>/update/', methods=['PUT', 'PATCH'])
 @jwt_required()
 def alter_address(id):

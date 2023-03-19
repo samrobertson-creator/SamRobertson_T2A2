@@ -9,8 +9,6 @@ class User(db.Model):
     email = db.Column(db.String, unique=True, nullable=False)
     password = db.Column(db.String, nullable=False)
     full_name = db.Column(db.String, nullable=False)
-    # first_name = db.Column(db.String)
-    # last_name = db.Column(db.String)
     age = db.Column(db.Integer)
     street_number = db.Column(db.Integer, nullable=False)
     street_name = db.Column(db.String, nullable=False)

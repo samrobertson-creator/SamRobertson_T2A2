@@ -4,11 +4,11 @@ from datetime import date
 from models.users import User
 from models.products import Products
 from models.address import Address
-# from models.orders import Order
+r
 
 db_commands = Blueprint('db', __name__)
 
-#General Commands for Database Management and Testing
+#Commands for Database Management and Testing
 @db_commands.cli.command('create')
 def create_db():
     db.create_all()
