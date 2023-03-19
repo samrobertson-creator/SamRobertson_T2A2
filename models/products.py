@@ -10,7 +10,6 @@ class Products(db.Model):
 
     product_id = db.Column(db.Integer, primary_key=True, nullable=False)
     description = db.Column(db.String)
-    style = db.Column(db.String, nullable=False)
     brand = db.Column(db.String, nullable=False)
     category = db.Column(db.String, nullable=False)
     size = db.Column(db.String, nullable=False)
@@ -22,5 +21,5 @@ class ProductSchema(ma.Schema):
     category = fields.String(required=True, validate=OneOf(VALID_CATEGORY))
     brand = fields.String(required=True, validate=OneOf(VALID_BRAND))
     class Meta:
-        fields = ('product_id', 'description', 'style', 'brand', 'category', 'size', 'price', 'quantity')
+        fields = ('product_id', 'description', 'brand', 'category', 'size', 'price', 'quantity')
         ordered = True

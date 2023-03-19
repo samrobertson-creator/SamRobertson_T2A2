@@ -72,7 +72,7 @@ def seed_db():
             brand = 'MJ Bale',
             category = 'jackets',
             size = '40',
-            price = '$399',
+            price = '399',
             quantity = '2'
         ),
         Products(
@@ -80,7 +80,7 @@ def seed_db():
             brand = 'Anthony Squires',
             category = 'Business Shirts',
             size = '41',
-            price = '$109',
+            price = '109',
             quantity = '3'
         ),
         Products(
@@ -88,7 +88,7 @@ def seed_db():
             brand = 'Hugo Boss',
             category = 'Pants',
             size = '36',
-            price = '$249',
+            price = '249',
             quantity = '1'
         ),
         Products(
@@ -96,7 +96,7 @@ def seed_db():
             brand = 'Country Road',
             category = 'Jackets',
             size = '40',
-            price = '$349',
+            price = '349',
             quantity = '4'
         ),
         Products(
@@ -104,7 +104,7 @@ def seed_db():
             brand = 'Politix',
             category = 'Ties',
             size = 'NA',
-            price = '$99',
+            price = '99',
             quantity = '5'
         )
     ]
