@@ -10,13 +10,16 @@ Currently the fashion industry contributes to 10% of global carbon emissions. Th
 
 ## Why have you chosen this database system. What are the drawbacks compared to others?
 
-PostgresSQL is open source, making it possible for developers like myself to utilise it for free regardless of whether we use it for personal or business purposes. PostgresSQL is relatively simple to use and highly adaptable to the various OS systems used by people throughout the world. 
+PostgresSQL is open source, making it possible for developers like myself to utilise it for free regardless of whether we use it for personal or business purposes. PostgresSQL is relatively simple to use and highly adaptable to the various OS systems used by people throughout the world.
 Even though PostgresSQL has numerous benefits, other RDMBS like MySQL load enormous volumes of data significantly more quickly. This is a potential disadvantage of using PostgresSQL.
+
+## Identify and discuss the key functionalities and benefits of an ORM
+
+As an ORM, SQLAlchemy offers the essential features. The implementation of SQLAlchemy provides for developers to have an array of libraries to access allowing the manipulation and interaction with he database through the application to the basically easy. The foundation of SQLAlchemy enables programmers to construct user-friendly database access methods while sanitising and upholding a high standard of security for the data kept inside. It is possible to directly import and use other packages, like JWT, in conjunction with SQLAlchemy and other packages to increase the functionality and security of the codebase and database.
 
 ## An ERD for your app
 
 [erd](https://github.com/samrobertson-creator/SamRobertson_T2A2/blob/main/docs/erd.png)
-
 
 ## Detail any third party services that your app will use
 
@@ -74,3 +77,7 @@ flask db drop && flask db create && flask db seed
 flask db drop
 
 flask db create && flask db seed
+
+### API Py-Package Requirements
+
+[API Requirements](https://github.com/samrobertson-creator/SamRobertson_T2A2/blob/main/requirements.txt)
