@@ -19,6 +19,32 @@ Even though PostgresSQL has numerous benefits, other RDMBS like MySQL load enorm
 
 As an ORM, SQLAlchemy offers the essential features. The implementation of SQLAlchemy provides for developers to have an array of libraries to access allowing the manipulation and interaction with he database through the application to the basically easy. The foundation of SQLAlchemy enables programmers to construct user-friendly database access methods while sanitising and upholding a high standard of security for the data kept inside. It is possible to directly import and use other packages, like JWT, in conjunction with SQLAlchemy and other packages to increase the functionality and security of the codebase and database.
 
+## Document all endpoints for your API
+
+### Authentication/SignUp
+
+### Sign-in
+
+### Sort User by ID
+
+### Update User
+
+### Delete User Account
+
+### Adding New Products
+
+### List All Available Products
+
+### Sort By Category
+
+### Sort By Brand
+
+### Sort By Style
+
+### Sort By Price
+
+### Sort By Product ID
+
 ## An ERD for your app
 
 [erd](https://github.com/samrobertson-creator/SamRobertson_T2A2/blob/main/docs/erd.png)
