@@ -18,14 +18,14 @@ def create_db():
 def drop_db():
     db.drop_all()
     print("Tables dropped")
-    @db_commands.cli.command('seed')
+
+@db_commands.cli.command('seed')
 def seed_db():
     users = [
         User(
+            full_name = 'Steven Stevenson',
             email='suitshopadmin@suits.com',
             password=bcrypt.generate_password_hash('123').decode('utf-8'),
-            first_name='Steve',
-            last_name='User',
             is_admin=True,
             street_number = '1000',
             street_name = 'Suit Street',
@@ -33,8 +33,7 @@ def seed_db():
             postcode = '4000'
         ),
         User(
-            first_name='Burt',
-            last_name='Macklin',
+            full_name = 'Burt Macklin',
             email='burt@fbi.com',
             password=bcrypt.generate_password_hash('12345').decode('utf-8'),
             street_number = '99',
@@ -52,7 +51,7 @@ def seed_db():
             street_number = '1000',
             street_name = 'Suit Street',
             suburb = 'Queens',
-            postcode = '4000'
+            postcode = '4000',
             user = users[0]
         ),
 
@@ -60,7 +59,7 @@ def seed_db():
             street_number = '99',
             street_name = 'Pit Street',
             suburb = 'The Pit',
-            postcode = '4101'
+            postcode = '4101',
             user = users[1]
         )
     ]
@@ -111,3 +110,5 @@ def seed_db():
     ]
     db.session.add_all(products)
     db.session.commit()
+
+    print('Tables Created & Seeded')

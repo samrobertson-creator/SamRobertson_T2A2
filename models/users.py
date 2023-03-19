@@ -19,14 +19,14 @@ class User(db.Model):
     is_admin = db.Column(db.Boolean, default=False)
     addresses = db.relationship('Address', back_populates='user', cascade='all, delete')
 
-    class UserSchema(ma.Schema):
+class UserSchema(ma.Schema):
     email = fields.Email(required=True)
     password = fields.String(required=True, validate=And(
         Length(min=6, error='Password must be at least 6 characters long.'),
         Regexp('^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[\W]).*$', error='Password must inlcude at least one uppercase letter, one lowercase letter, one digit and one non-word character.')
     ))
-    first_name = fields.String(validate=Length(min=1, error='Name entered must contain at least 1 characters.'))
-    last_name = fields.String()
+    full_name = fields.String(validate=Length(min=1, error='Name entered must contain at least 1 characters.'))
+
 
     class Meta:
         fields = ('id', 'email', 'password', 'full_name', 'age', 'is_admin')

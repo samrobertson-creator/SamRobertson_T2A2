@@ -1,10 +1,15 @@
 from flask import Flask
 from init import db, ma, bcrypt, jwt
-
-# Imports for controllers here
-
+# BP Imports
+from controllers.commands_controller import db_commands
+from controllers.auth_controller import auth_bp
+from controllers.user_controller import user_bp
+from controllers.address_controller import address_bp
+from controllers.products_controller import products_bp
+# General Imports
 from marshmallow.exceptions import ValidationError
 import os 
+
 
 def create_app():
     app = Flask(__name__)
