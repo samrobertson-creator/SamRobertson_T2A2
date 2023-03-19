@@ -1,5 +1,7 @@
 # Suit Shop API
 
+[GitHub Repo Link](https://github.com/samrobertson-creator/SamRobertson_T2A2)
+
 ## Identification of the problem you are trying to solve by building this particular app
 
 This API serves as an online store web app, providing formal dress essentials from numerous brands. It can be intimidating to find the right suit for different occasions, such as weddings or finding a new job. However some of the features of this API aleviate the difficulty of this task.  This API controls the communication between consumer and the merchandiser. It can help users with their difficulties by allowing them to filter stock by avalaible quantity, total price and size, as well as comparing the different brands. The managers and admins are able to create, delete and alter any of the products and their information.
