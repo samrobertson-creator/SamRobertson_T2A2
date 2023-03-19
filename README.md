@@ -13,6 +13,11 @@ Currently the fashion industry contributes to 10% of global carbon emissions. Th
 PostgresSQL is open source, making it possible for developers like myself to utilise it for free regardless of whether we use it for personal or business purposes. PostgresSQL is relatively simple to use and highly adaptable to the various OS systems used by people throughout the world. 
 Even though PostgresSQL has numerous benefits, other RDMBS like MySQL load enormous volumes of data significantly more quickly. This is a potential disadvantage of using PostgresSQL.
 
+## An ERD for your app
+
+[erd](https://github.com/samrobertson-creator/SamRobertson_T2A2/blob/main/docs/erd.png)
+
+
 ## Detail any third party services that your app will use
 
 The application does not yet use any third-party services to function. Orders entered on the client side may be filled by third-party services in later development versions.
